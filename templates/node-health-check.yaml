@@ -1,0 +1,10 @@
+---
+apiVersion: remediation.medik8s.io/v1alpha1
+kind: NodeHealthCheck
+metadata:
+  name: {{ .Values.nhc.name }}
+spec:
+  minHealthy: {{ .Values.nhc.minHealthy }}
+  remediationTemplate: {{ .Values.nhc.remediationTemplate | toPrettyJson }}
+  selector: {{ .Values.nhc.selector | toPrettyJson }}
+  unhealthyConditions: {{ .Values.nhc.unhealthyConditions |  toPrettyJson }}

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: node-health-check-operator
+description: Chart to configure node-health-check-operator
+type: application
+version: 0.1.0
+dependencies: [ ]
